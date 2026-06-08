@@ -12,7 +12,6 @@ else:
     
     # Downloading the data from yfinance --> Just put the stockname.ns to get the details of the desired stock
     data = yf.download(stock_name,start="2021-01-01",end="2026-05-31")
-    print(data.head())
     data.columns = data.columns.droplevel(1)
     data.columns.name = None #Set the name of  the columns
 
