@@ -49,6 +49,7 @@ print(breakout)
 # plt.plot(data.index,data["Price_Moving_Average"],label="20 Days MA(Price)",color="Red",alpha=0.7)
 # plt.xlabel("Date")
 # plt.ylabel("Price")
+# plt.title("Stock Price Trend with 20-Day SMA")
 # plt.legend()
 # plt.show()
 
@@ -56,6 +57,7 @@ print(breakout)
 # plt.plot(data.index,data["Volume_Moving_Average"],label = "20 Days MA(Volume)",color = "Green",alpha = 0.7)
 # plt.xlabel("Date")
 # plt.ylabel("Volume")
+# plt.title("Trading Volume Trend With 20-Day SMA")
 # plt.legend()
 # plt.show()
 
@@ -71,7 +73,7 @@ print(breakout)
 # ax1.plot(data.index,data["Closing_Price"],color="Blue",label="Price on each day")
 # ax1.plot(data.index,data["Price_Moving_Average"],color="Green")
 # ax1.set_ylabel("Price Moving Average")
-# ax1.set_title("Market Sniper Scan : Price vs Volume Breakouts")
+# ax1.set_title("Algorithmic Volume Breakout Scanner")
 # # ax1.set_xlabel("Date") #We can also label this x axis but its taking extra space on the graph
 
 # #Bottom chart(ax2) : Plot the Volume Moving Average
@@ -111,6 +113,6 @@ ax2.set_ylabel("Volume(Millions)",color="Orange")
 ax2.legend()
 ax2.tick_params(axis="y",labelcolor= "orange") #​tick_params: By coloring the text of the Y-axis labels to match the lines (blue for price, orange for volume), you prevent yourself from getting confused about which line belongs to which scale when you are analyzing the data.
 ax1.set_facecolor("#FDF6E3")
-plt.title("PRICE MA vs VOLUME MA",color="Black",weight="bold")
+plt.title("Algorithmic Volume Breakout Scanner",color="Black",weight="bold")
 fig.set_facecolor("#EAE7DC")
 plt.show()
